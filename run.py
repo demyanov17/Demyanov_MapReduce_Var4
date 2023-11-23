@@ -100,7 +100,7 @@ if __name__ == '__main__':
     while True:
 
         print("Iteration #%i" % i)
-        mr_job=MRKMeans(args=args + ['--c', CENTROIDS_FILE])
+        mr_job = MRKMeans(args=args + ['--c', CENTROIDS_FILE])
 
         with mr_job.make_runner() as runner:
             runner.run()
